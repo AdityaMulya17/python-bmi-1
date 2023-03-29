@@ -1,9 +1,5 @@
-bmi_value = 30
-status = "Normal"
+from Pasien import Pasien
 
-if(bmi_value < 18.5):
-    status = "Underweight"
-elif(bmi_value < 25 and bmi_value > 18.5):
-    status = "Tidak Underweight"
-
-print(status)
+pasien1 = Pasien("Wira",27,20)
+print(pasien1.get_nama())
+print(pasien1.greet_pasien())
